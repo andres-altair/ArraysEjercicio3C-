@@ -7,16 +7,16 @@ namespace ArraysEjercicio3C
         static void Main(string[] args) 
         {
             int[,] ar = new int[10,10];
-            for (int i = 100; i < ar.Length; i--)
+            for (int i = 100; i >1; i--)
             {
                 ar[i,-i] = i;
-                Console.WriteLine(ar[i].ToString());
+                Console.WriteLine(ar[i,i]);
             }
-           for (int i = 0; i < ar.Length; i++)
+           for (int i = 0; i < 10; i++)
             {
-                for (int j = 0; j < ar[i].Length; j++)
+                for (int j = 0; j < 10; j++)
                 {
-                    Console.WriteLine(i,j);
+                    Console.WriteLine(ar[i, j]);
                 }
             }
         }
